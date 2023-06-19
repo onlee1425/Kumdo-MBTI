@@ -3,5 +3,20 @@ body {
 }
 
 *{
-    font-family: 'Stylish', sans-serif, cursive;
+    font-family: 'NanumSquareNeo', sans-serif, cursive;
+    font-weight: 700;
 }
+
+.footer-button {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-button button {
+    background-color: rgb(220, 230, 236);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
