@@ -6,7 +6,7 @@ function kakaoShare(){
     const shareTitle = '동물로 알아보는 검도 MBTI 결과';
     const shareDesc = infoList[resutlAlt].name;
     const shareImage = url + 'img/img-' + resutlAlt + '.png';
-    const shareURL = url + 'page.result-' + resutlAlt + '.html';
+    const shareURL = url + 'page/result-' + resutlAlt + '.html';
     
     Kakao.Share.sendDefault({
         objectType: 'feed',

@@ -1,8 +1,13 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
+const statusBar = document.querySelector("#statusBar")
 const endPoint = 12;
 const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+function contact() {
+    window.open("https://github.com/onlee1425","_blank");
+}
 
 function calResult(){
     console.log(select);
@@ -28,21 +33,20 @@ function setResult(){
 
 }
 
-function goResult(){
+function goResult() {
     qna.style.WebkitAnimation = "fadeOut 1s";
     qna.style.animation = "fadeOut 1s";
-    
+  
     setTimeout(() => {
-        result.style.WebkitAnimation = "fadeIn 1s";
-        result.style.animation = "fadeIn 1s";
-        setTimeout(() => {
-          qna.style.display = "none";
-          result.style.display = "block"
-        }, 450)})
-
-        console.log(select);
-        setResult();
-    }
+      result.style.WebkitAnimation = "fadeIn 1s";
+      result.style.animation = "fadeIn 1s";
+      qna.style.display = "none";
+      result.style.display = "block";
+  
+      console.log(select);
+      setResult();
+    }, 450);
+  }
 
 
 function addAnswer(answerText,qIdx,idx){
@@ -94,22 +98,33 @@ function goNext(qIdx){
     status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
 
-function begin(){
-    main.style.WebkitAnimation = "fadeOut 1s";
+function showImage() {
+    main.style.display = "none";
+    image.style.display = "block";
     main.style.animation = "fadeOut 1s";
-    
+    image.style.animation = "fadeIn 1s";
+    statusBar.style.display = "none";
+    qna.style.animation = "fadeIn 1s";
+    qna.style.display = "block";
+}
+  
+function hideImage() {
+    image.style.animation = "fadeOut 1s";
     setTimeout(() => {
+        image.style.display = "none";
+        qna.style.display = "block";
+        statusBar.style.display = "block";
         
-        qna.style.WebkitAnimation = "fadeIn 1s";
+    }, 450);
+}
+
+function begin() {
+    hideImage();
+    main.style.animation = "fadeOut 1s";
+    setTimeout(() => {
         qna.style.animation = "fadeIn 1s";
-        setTimeout(() => {    
-            main.style.display = "none";
-            qna.style.display = "block"
-        },450)
-        
+        qna.style.display = "block";
         let qIdx = 0;
         goNext(qIdx);
-
-    },450);
-
+    }, 450);
 }
