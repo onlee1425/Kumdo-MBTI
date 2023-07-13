@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang ="ko" dir="ltr">
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initail-scale=1">
     <meta name="author" content="Dev.OnLee">
@@ -26,11 +27,12 @@
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/result.css">
+    
     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
-        integrity="${INTEGRITY_VALUE}" crossorigin="anonymous">
+        integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous">
     </script>
     <script>
-        Kakao.init('JAVASCRIPT_KEY');
+        Kakao.init('34426c145d425f801e3a6d75da3c3870');
         Kakao.isInitialized();
     </script>
 </head>    
@@ -76,6 +78,7 @@
                 
             </div>
             <button type="button" class="kakao mt-3 py-2 px-2" onclick="js:kakaoShare()">공유하기</button>
+            <button type="button" class="btn btn-outline-primary mt-3 py-2 px-2" onclick="js:redirectHome()">다시하기</button>
 
     </section>
         <script src="./js/data.js" charset="utf-8"></script>
@@ -84,8 +87,9 @@
 
         <div class="footer-button">
             <div>Created by <a href="javascript:void(0)" onclick="contact()" style="text-decoration: none;">Dev.OnLee</a> 
-                <br> Idea contributors Park.JinDol
-                <br> Affiliated with 금오검도관</div>
+                <br> Idea contributors <a href="javascript:void(0)"onclick="contact1()" style="text-decoration: none;">Park.JinDol</a>
+                <br> Affiliated with <a href="javascript:void(0)"onclick="contact2()" style="text-decoration: none;">금오검도관</a>
+            </div>
         </div>
     
 

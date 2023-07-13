@@ -8,6 +8,12 @@ const select = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 function contact() {
     window.open("https://github.com/onlee1425","_blank");
 }
+function contact1() {
+    window.open("https://instagram.com/nusnijkrap?igshid=OGQ5ZDc2ODk2ZA==","_blank");
+}
+function contact2() {
+    window.open("https://cafe.naver.com/ko8524525","_blank");
+}
 
 function calResult(){
     console.log(select);
