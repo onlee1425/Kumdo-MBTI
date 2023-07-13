@@ -34,3 +34,16 @@
     background-color: black;
     color: #fee500;
 }
+
+.home{
+    color: rgb(8, 8, 8);
+    background-color: #7fcef3;
+    font-size: 22px;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.home:hover, .home:focus {
+    background-color: #070707;
+    color: #56a6f1;
+}
