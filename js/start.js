@@ -14,6 +14,12 @@ function contact1() {
 function contact2() {
     window.open("https://cafe.naver.com/ko8524525","_blank");
 }
+function contact3() {
+    window.open("https://www.instagram.com/kumo_kumdo_official/","_blank");
+}
+function contact4() {
+    window.open("https://www.youtube.com/@Barefoot_Couple","_blank");
+}
 
 function calResult(){
     console.log(select);
